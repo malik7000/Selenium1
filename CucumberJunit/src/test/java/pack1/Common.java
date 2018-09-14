@@ -19,7 +19,7 @@ static XSSFWorkbook wb;
 static XSSFSheet sheet1;
 	
 	public static void launchbrowser () {
-		System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/BrowserDrivers/chromedriver.exe");
 		driver = new ChromeDriver ();
 	}
 	
